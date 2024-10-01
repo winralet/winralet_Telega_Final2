@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content {
+  text-align: center;
+}
+
+.block {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width:300PX;
+  height:500PX;
+}
+
+.js-counter {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.photo {
+  margin: 20px 0;
+}
+
+.personPhoto {
+  border-radius: 50%;
+  width: 200px; /* Измените размер по необходимости */
+  height: 200px; /* Измените размер по необходимости */
+  object-fit: cover; /* Обрезает изображение, сохраняя его пропорции */
+}
+
+
+.js-inc-btn,.js-clear-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  border-radius: 50px; /* Главная кнопка круглой формы */
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.js-inc-btn:hover {
+  background-color: #45a049;
+}
+
+.js-clear-btn {
+  background-color: #f44336; /* Красная кнопка "Вывести" */
+}
+
+.js-clear-btn:hover {
+  background-color: #d32f2f;
+}
+
+
+.balance {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #000000;
+}
+
+
+
+.js-delit-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.js-delit-btn:hover {
+  background-color: darkred;
+}
+
+@media only screen and (max-width: 400px) {
+  /* стили для мобильных устройств */
+  .js-counter {
+    font-size: 1.5em;
+  }
+  .js-inc-btn, .js-clear-btn, .js-delit-btn {
+    font-size: 1.2em;
+    padding: 10px 20px;
+  }
+  
+  .balance {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #000000;
+  }
+
+}
